@@ -2,7 +2,7 @@ import * as GaussianSplats3D from '@mkkellogg/gaussian-splats-3d';
 
 
 const viewer = new GaussianSplats3D.Viewer({
-  // === KRİTİK SAFE AYARLAR ===
+  // === AYARLAR ===
   gpuAcceleratedSort: false,
   sharedMemoryForWorkers: false,
   enableSIMDInSort: false,
@@ -23,7 +23,6 @@ const viewer = new GaussianSplats3D.Viewer({
 
 viewer
   .addSplatScene('/goksu.ply', {
-    // PLY büyük gelirse kurtarır
     scale: [0.01, 0.01, 0.01],
     rotation: [1, 0, 0, 0],
     splatAlphaRemovalThreshold: 5,
